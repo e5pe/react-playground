@@ -1,0 +1,35 @@
+.accordion-container {
+  .accordion-item {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 4% 1% 4% 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    .accordion-title {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      .title {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        // flex-basis: 100%;
+        // flex: 1;
+      }
+      .icon {
+        flex-direction: column;
+        display: flex;
+        // flex-basis: 100%;
+        // flex: 1;
+      }
+    }
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+}
